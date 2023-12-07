@@ -9,6 +9,7 @@ import { DesafiosComponent } from './pages/desafios/desafios.component';
 import { CronogramaComponent } from './pages/cronograma/cronograma.component';
 import { PremiacaoComponent } from './pages/premiacao/premiacao.component';
 import { RegulamentoComponent } from './pages/regulamento/regulamento.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { RegulamentoComponent } from './pages/regulamento/regulamento.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
