@@ -1,0 +1,31 @@
+<form action="" [formGroup]="formularioInscricao">
+    <input type="text" formControlName="nome">
+    <p *ngIf="formularioInscricao.get('nome').touched &&  formularioInscricao.get('nome').hasError('required')">
+        Por favor, insira seu nome
+    </p>
+
+    <input type="text" formControlName="sobrenome">
+    <p *ngIf="formularioInscricao.get('sobrenome').touched &&  formularioInscricao.get('sobrenome').hasError('required')">
+        Por favor, insira seu sobrenome
+    </p>
+
+    <input type="email" formControlName="email">
+    <p *ngIf="formularioInscricao.get('email').touched &&  formularioInscricao.get('email').hasError('required')">
+        Por favor, insira seu email
+    </p>
+
+    <input type="text" formControlName="telefone">
+    <p *ngIf="formularioInscricao.get('telefone').touched &&  formularioInscricao.get('telefone').hasError('required')">
+        Por favor, insira seu telefone
+    </p>
+
+    <input type="text" formControlName="cep">
+
+    <input type="text" formControlName="endereco">
+    <input type="text" formControlName="bairro">
+    <input type="text" formControlName="complemento">
+    <input type="text" formControlName="cidade">
+    <input type="text" formControlName="estado">
+
+    <button (click)="enviar()">Enviar</button>
+</form>
