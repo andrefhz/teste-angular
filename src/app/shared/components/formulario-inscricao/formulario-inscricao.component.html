@@ -1,31 +1,23 @@
+<section class="form-section">
+<h2>FAÇA SUA INSCRIÇÃO</h2>
+
 <form action="" [formGroup]="formularioInscricao">
-    <input type="text" formControlName="nome">
-    <p *ngIf="formularioInscricao.get('nome').touched &&  formularioInscricao.get('nome').hasError('required')">
-        Por favor, insira seu nome
-    </p>
+    <div class="form-top">
+        <input placeholder="Nome" type="text" formControlName="nome">
+        <input placeholder="Sobrenome" type="text" formControlName="sobrenome">     
+        <input placeholder="E-mail" type="email" formControlName="email">
+        <input placeholder="Telefone" type="text" formControlName="telefone">
+        
+    </div>
 
-    <input type="text" formControlName="sobrenome">
-    <p *ngIf="formularioInscricao.get('sobrenome').touched &&  formularioInscricao.get('sobrenome').hasError('required')">
-        Por favor, insira seu sobrenome
-    </p>
-
-    <input type="email" formControlName="email">
-    <p *ngIf="formularioInscricao.get('email').touched &&  formularioInscricao.get('email').hasError('required')">
-        Por favor, insira seu email
-    </p>
-
-    <input type="text" formControlName="telefone">
-    <p *ngIf="formularioInscricao.get('telefone').touched &&  formularioInscricao.get('telefone').hasError('required')">
-        Por favor, insira seu telefone
-    </p>
-
-    <input type="text" formControlName="cep">
-
-    <input type="text" formControlName="endereco">
-    <input type="text" formControlName="bairro">
-    <input type="text" formControlName="complemento">
-    <input type="text" formControlName="cidade">
-    <input type="text" formControlName="estado">
-
+    <div class="form-bottom">
+    <input placeholder="CEP" type="text" formControlName="cep">
+    <input placeholder="Endereço" type="text" formControlName="endereco">
+    <input placeholder="Bairro" type="text" formControlName="bairro">
+    <input placeholder="Complemento" type="text" formControlName="complemento">
+    <input placeholder="Cidade" type="text" formControlName="cidade">
+    <input placeholder="Estado" type="text" formControlName="estado">
+    </div>
     <button (click)="enviar()">Enviar</button>
 </form>
+</section>
