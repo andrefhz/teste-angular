@@ -1,9 +1,24 @@
-.salsicha {
+header {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 15px;
 
-    li {
-        a {
-            color: red;
+    ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+
+        li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
         }
-    }   
-
+    }
 }
