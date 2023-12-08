@@ -38,3 +38,78 @@
         }
     }
 }
+
+.desafios {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    padding: 4em 0em;
+    font-family: sans-serif;
+    h2 {
+        font-size: 42px;
+        color: #003262;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    span {
+        color: #42C0B6;
+        font-weight: 500;
+    }
+
+    .desafio-items {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .desa-item {
+        width: 50%;
+        margin-bottom: 2em;
+
+        .top-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            h3 {
+                color: #003262;
+                font-weight: bold;
+                font-size: 21px;
+            }
+        }
+        .bot-item {
+            margin-top: 10px;
+
+            i {
+                color: #42C0B6;
+            }
+
+            ul li {
+                font-size: 15px;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 375px) { 
+
+    .desafios {
+        width: 80%;
+    }
+
+    .desafio-items {
+        flex-direction: column;
+    }
+
+    .desa-item {
+        width: 100% !important;
+    }
+}
